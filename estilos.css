@@ -329,9 +329,10 @@ footer {
     color: #adb5bd; /* Color gris claro */
 }
 
-/* Media Queries */
+/* ===== MEDIA QUERIES PARA RESPONSIVE DESIGN ===== */
+/* Las Media Queries permiten aplicar estilos específicos según el tamaño de la pantalla */
 
-/* Tablet */
+/* Tablet - Ajustes para pantallas medianas (tablets y dispositivos similares) */
 @media (max-width: 1024px) {
     .hero {
         flex-direction: column;
@@ -367,7 +368,7 @@ footer {
     }
 }
 
-/* Mobile */
+/* Mobile - Ajustes para pantallas pequeñas (smartphones y dispositivos móviles) */
 @media (max-width: 768px) {
     header {
         padding: 1rem;
@@ -439,7 +440,8 @@ footer {
     }
 }
 
-/* Hacker/Gamer Style */
+/* ===== TEMA HACKER/GAMER ===== */
+/* Estilo visual temático que simula interfaces de hacker o videojuegos con colores neón y efectos especiales */
 body {
     background-color: #0a0a0a;
     color: #33ff33; /* Neon green text */
@@ -556,7 +558,7 @@ footer {
     color: #111;
 }
 
-/* Add a glitch effect to images */
+/* Efecto de glitch en imágenes - Simula distorsión digital al estilo cyberpunk */
 .product img, .hero-image img {
     filter: brightness(0.8) contrast(1.2);
     transition: all 0.3s;
@@ -566,7 +568,7 @@ footer {
     filter: brightness(1) contrast(1.5) hue-rotate(90deg);
 }
 
-/* Add scanlines effect */
+/* Efecto de líneas de escaneo - Simula pantallas CRT antiguas con líneas horizontales */
 body::before {
     content: "";
     position: fixed;
@@ -584,7 +586,7 @@ body::before {
     opacity: 0.15;
 }
 
-/* Add a cursor blink effect to headings */
+/* Efecto de cursor parpadeante en títulos - Simula terminal de comandos */
 h1, h2, h3 {
     position: relative;
 }
@@ -596,6 +598,7 @@ h1::after, h2::after, h3::after {
     animation: cursor 1s infinite;
 }
 
+/* Animación del cursor parpadeante - Alterna entre visible e invisible */
 @keyframes cursor {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
